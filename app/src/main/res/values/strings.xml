@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Register_Majed</string>
+    <color name="black">#000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="majedblue">#4785dd</color>
+    <color name="gray">#8a919a</color>z
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="region_prompt">Choose a country</string>
+    <string-array name="region_arrays">
+        <item>Batroun</item>
+        <item>West Bekaa</item>
+        <item>Chouf</item>
+        <item>Koura</item>
+        <item>Metn</item>
+        <item>Minieh-Denniye</item>
+        <item>Nabatieh</item>
+        <item>Hermel</item>
+        <item>Becharre</item>
+        <item>Baabda</item>
+        <item>Baalbeck</item>
+        <item>Bint Jbeil</item>
+        <item>Beirut</item>
+        <item>Jbeil</item>
+        <item>Jezzine</item>
+        <item>Hasbaya</item>
+        <item>Rachaya</item>
+        <item>Zahle</item>
+        <item>Zghorta</item>
+        <item>Tyre</item>
+        <item>Saida</item>
+        <item>Tripoli</item>
+        <item>Aley</item>
+        <item>Akkar</item>
+        <item>Keserouan</item>
+        <item>Marjeeyoun</item>
+
+    </string-array>
+    <string name="profession_prompt">Choose a profession</string>
+    <string-array name="profession_arrays">
+        <item>Orchestrator</item>
+        <item>Improviser</item>
+        <item>Rapper</item>
+        <item>Conductor</item>
+        <item>Singer</item>
+        <item>Record producer</item>
+        <item>Composer</item>
+        <item>Arranger</item>
+        <item>Accordionist</item>
+        <item>Bassoonist</item>
+        <item>Cellist</item>
+        <item>Clarinetist</item>
+        <item>Electronic musician</item>
+        <item>Flautist</item>
+        <item>Guitarist</item>
+        <item>Keyboardist</item>
+        <item>Organist</item>
+        <item>Pianist</item>
+        <item>Percussionist</item>
+        <item>Saxophonist</item>
+        <item>Trumpeter</item>
+        <item>Violinist</item>
+        <item>Violist</item>
+        <item>Bassist</item>
+        <item>Harpist</item>
+        <item>Bouzouki player</item>
+        <item>Hornist</item>
+        <item>Drummer</item>
+        <item>Bandurist</item>
+        <item>Oud player</item>
+        <item>Darbukka player</item>
+        <item>Katem player</item>
+        <item>Organ</item>
+        <item>Daff player</item>
+        <item>Nay player</item>
+        <item>Mijwez player</item>
+        <item>Mizmar player</item>
+        <item>Kawala player</item>
+        <item>Kanoun player</item>
+
+    </string-array>
+
+    <string-array name="category_arrays">
+        <item>Orchestrator</item>
+        <item>Improviser</item>
+        <item>Rapper</item>
+    </string-array>
+
+</resources>

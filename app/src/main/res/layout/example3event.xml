@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Event Name:"
+                    android:ems="10"
+                    android:id="@+id/editText16"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Biel Live Music Concert"
+                    android:ems="10"
+                    android:id="@+id/editText18"
+                    android:background="@drawable/input_outline"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Hosted By: "
+                    android:ems="10"
+                    android:id="@+id/editTeext16"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Wassim El Ahmar"
+                    android:ems="10"
+                    android:id="@+id/editTeext18"
+                    android:background="@drawable/input_outline"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Starts at: "
+                    android:ems="10"
+                    android:id="@+id/editText19"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editText20"
+                    android:text="24-10-2016"
+                    android:textColor="@color/black"
+                    android:background="@drawable/input_outline"
+                    android:layout_weight="0.14"
+                    android:padding="3dp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editText21"
+                    android:textColor="@color/black"
+                    tools:text="17:30"
+                    android:background="@drawable/input_outline"
+                    android:layout_marginLeft="20dp"
+                    android:padding="3dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Ends At: "
+                    android:ems="10"
+                    android:id="@+id/ediftText19"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editTfext20"
+                    android:text="24-10-2016"
+                    android:textColor="@color/black"
+                    android:background="@drawable/input_outline"
+                    android:layout_weight="0.14"
+                    android:padding="3dp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/edfitText21"
+                    android:textColor="@color/black"
+                    tools:text="17:30"
+                    android:background="@drawable/input_outline"
+                    android:layout_marginLeft="20dp"
+                    android:padding="3dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Location: "
+                    android:ems="10"
+                    android:id="@+id/ediftTefdgxt19"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/edfgitTfext20"
+                    android:text="Beirut Biel Pavillion Royal"
+                    android:textColor="@color/black"
+                    android:background="@drawable/input_outline"
+                    android:padding="3dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Description: "
+                    android:ems="10"
+                    android:id="@+id/ediftTefdertgxt19"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_weight="0.98"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="343dp"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText22"
+                android:background="@drawable/input_outline"
+                tools:text="Led by Resident Conductor Fawzi Haimor, Music for the Spirit will be held at the Kresge Theatre on Carnegie Mellon University's campus and will highlight a variety of music from the major world faith traditions. Admission to Mu"
+                android:padding="3dp"
+                android:paddingLeft="5dp"
+                android:textAlignment="viewStart"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="0.87" />
+        </LinearLayout>
+
+        <Button
+            android:text="Submit Event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

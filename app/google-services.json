@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "997645128780",
+    "firebase_url": "https://register-majed.firebaseio.com",
+    "project_id": "register-majed",
+    "storage_bucket": "register-majed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997645128780:android:ab6cfa1eb8a97aac",
+        "android_client_info": {
+          "package_name": "com.example.user.register_majed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997645128780-v59nm70ipcsbpe5jshsan7pn081rhk1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgy_bvK5OPo0ca4xSdsKCyUIuwmYAyh_U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+
+    app:cardBackgroundColor="@android:color/white"
+    android:background="@color/colorPrimary"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
+    android:layout_marginBottom="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <TextView
+            android:text="majedch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_username"
+            android:textStyle="normal|bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:text="Beirut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="8dp"
+                app:srcCompat="@drawable/linevertical"
+                android:id="@+id/imageView11"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/eventName"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="6dp"
+                android:text="Big Band featuring Stan Sulzmann"
+                android:textStyle="normal|bold"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="Fri June 12 2015"
+                    android:layout_width="261dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startDate"
+                    android:gravity="right" />
+
+                <TextView
+                    android:text="at 08:00 PM"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startTime"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="100dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/endTime"
+            android:visibility="gone" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/endDate"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="83dp"
+                app:srcCompat="@drawable/eventimage"
+                android:id="@+id/imageView12"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_desc"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:text="The Big Band perform charts from Stan's critically acclaimed Neon Orchestra project alongside music from his back catalogue, with the composer taking the stage as guest soloist."
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingTop="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:text="Hosted By:"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView26" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/HostedBy"
+                android:layout_weight="1"
+                android:text="Majed Chamseddine"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5.15"
+            android:id="@+id/linearRequests">
+
+            <TextView
+                android:text="Performance Requests:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView29"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_red_light"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_key"
+                    android:layout_weight="1.02"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_request_name"
+                    android:layout_weight="1.02"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_height="24dp"
+                    android:id="@+id/btn_decline"
+                    android:background="@mipmap/ic_clear_black_24dp"
+                    android:layout_width="24dp"
+                    android:gravity="right"
+                    android:layout_marginRight="15dp" />
+
+                <Button
+                    android:layout_height="24dp"
+                    android:id="@+id/btn_approve"
+                    android:background="@mipmap/ic_done_black_24dp"
+                    android:layout_width="24dp"
+                    android:gravity="right|center_vertical|center_horizontal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

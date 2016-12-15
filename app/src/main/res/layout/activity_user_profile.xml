@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.user.register_majed.userProfileActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:elevation="12dp"
+        android:id="@+id/view2"
+        app:cardCornerRadius="80dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp">
+
+        <ImageView
+            android:layout_height="160dp"
+            android:layout_width="match_parent"
+            android:id="@+id/profilepicture"
+            android:layout_below="@+id/view2"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignStart="@+id/view2">
+        </ImageView>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_weight="0.14"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/view2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profession"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Info"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/InfoButton"
+                android:background="@drawable/button_pressed"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:onClick="onClick"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:text="Activity"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ActivityButton"
+                android:layout_weight="0.24"
+                android:background="@drawable/button_pressed"
+                android:layout_marginRight="5dp"
+                android:onClick="onClick"
+                android:layout_marginTop="2dp"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:text="Experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ExperienceButton"
+                android:layout_weight="0.67"
+                android:background="@drawable/button_pressed"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:onClick="onClick"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/LinearExperience"
+            android:layout_weight="0.14"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="250dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="206dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="160dp"
+                    android:layout_height="150dp"
+                    android:inputType="textMultiLine"
+                    android:layout_weight="0.95"
+                    android:padding="10dp"
+                    android:ems="10"
+                    android:id="@+id/userExperienceED"
+                    android:visibility="gone"
+                    android:gravity="top"
+                    android:hint="Add your experience.."
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/userExperienceTV"
+                    android:layout_weight="0.95"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/EditButton"
+                    android:background="@mipmap/ic_mode_edit_black_48dp"
+                    android:padding="10dp"
+                    android:layout_height="32dp"
+                    android:layout_width="32dp" />
+            </LinearLayout>
+
+            <Button
+                android:text="Done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/DoneEdit"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/LinearActivity"
+            android:visibility="gone"
+            android:layout_weight="0.14">
+
+            <TextView
+                android:text="This is the Activity of the user."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/LinearInfo"
+            android:visibility="visible"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/email1"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="normal|bold"
+                    android:text="Email:"
+                    android:layout_weight="0.00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/email"
+                    android:layout_weight="0.17"
+                    android:textAlignment="textStart"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="37dp"
+                    android:layout_height="34dp"
+                    android:id="@+id/emailButton"
+                    android:background="@mipmap/ic_email_black_24dp"
+                    android:layout_marginRight="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c2c2c2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:id="@+id/username1"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Username:"
+                    android:layout_width="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/username"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c2c2c2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:id="@+id/phonenumber1"
+                    android:textStyle="normal|bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="Phone:"
+                    android:layout_width="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/phonenumber"
+                    android:layout_weight="0.98"
+                    android:padding="10dp"
+                    android:textAlignment="textStart" />
+
+                <Button
+                    android:layout_width="41dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/buttonmessage"
+                    android:background="@mipmap/ic_textsms_black_24dp"
+                    android:layout_marginRight="15dp" />
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:id="@+id/buttoncall"
+                    android:textAlignment="center"
+                    android:background="@mipmap/ic_call_black_24dp"
+                    android:layout_weight="0.04"
+                    android:layout_marginRight="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c2c2c2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:id="@+id/location1"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Region:"
+                    android:layout_width="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/location"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:id="@+id/mapButton"
+                    android:background="@mipmap/ic_location_searching_black_24dp"
+                    android:layout_marginRight="15dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c2c2c2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:id="@+id/Gender1"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal|bold"
+                    android:text="Gender:"
+                    android:layout_width="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Gender"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c2c2c2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:id="@+id/DOB1"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal|bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Birthday:"
+                    android:layout_width="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/DOB"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

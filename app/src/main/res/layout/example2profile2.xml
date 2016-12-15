@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="141dp"
+            app:srcCompat="@drawable/profile"
+            android:id="@+id/imageView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:inputType="textPersonName"
+            android:text="Hasan Fayad"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/white"
+            android:layout_weight="1.25" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Guitarist"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:text="Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:background="@color/white"
+                android:layout_weight="0.28"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:text="Experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/button4"
+                android:layout_weight="0.24"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:text="Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/button3"
+                android:background="@color/white"
+                android:layout_weight="0.27" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editText3"
+                    android:text=" I spent most of my time alone in my room, smoking and practicing harmonic minor scales. That taught me a different subset of life lessons, and those lessons help define who I am today.  I practiced hours each day, knew all of the scales and runs, all of the techniques and tricks, could play fast and hard, slow and smooth, various styles of music, whatever." />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.user.register_majed.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="Majed Chamseddine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:paddingLeft="5dp"
+            android:textStyle="normal|bold"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_weight="0.04" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:srcCompat="@drawable/keyboard"
+            android:id="@+id/imageView7"
+            android:layout_weight="0.23" />
+
+        <TextView
+            android:text="Keyboard For Sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textStyle="normal|bold"
+            android:textSize="23sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="I'm selling this keyboard, it's like new - oriental keyboard with a lot of sounds and libraries. "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="16sp"
+
+            android:layout_weight="0.08"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:text="Price: $2300"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textColor="@color/majedblue"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.04" />
+
+        <TextView
+            android:text="Location: Downtown Beirut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/textView14"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="Remove Post"
+        android:layout_width="match_parent"
+        android:id="@+id/button5"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

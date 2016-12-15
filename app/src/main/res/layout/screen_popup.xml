@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+ >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_favorite_white_48dp"
+            android:id="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:text="People who like this post!"
+            android:textStyle="normal|bold"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAlignment="gravity"
+            android:padding="3dp"
+            android:layout_weight="0.88" />
+
+        <Button
+            android:id="@+id/btn_close_popup"
+            android:layout_gravity="left"
+            android:background="@mipmap/ic_close_black_24dp"
+            android:layout_weight="0.05"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/peopleLiked"
+        android:textStyle="normal|bold"
+        android:padding="3dp"
+        android:lineSpacingExtra="3sp" />
+
+</LinearLayout>

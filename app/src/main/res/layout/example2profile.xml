@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="141dp"
+            app:srcCompat="@drawable/profile"
+            android:id="@+id/imageView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:inputType="textPersonName"
+            android:text="Hasan Fayad"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/white"
+            android:layout_weight="1.25" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Guitarist"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:text="Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:background="@color/colorPrimary"
+                android:layout_weight="0.28"
+                android:textStyle="normal|bold"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:text="Experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:id="@+id/button4"
+                android:layout_weight="0.24" />
+
+            <Button
+                android:text="Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/button3"
+                android:background="@color/white"
+                android:layout_weight="0.27" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="39dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text="Gender: Male"
+                        android:ems="10"
+                        android:id="@+id/editText6"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="39dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:text="Location: West Bekaa"
+                    android:ems="10"
+                    android:id="@+id/editText7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Age: 23 years old"
+                    android:ems="10"
+                    android:id="@+id/editText8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editText9"
+                    android:text="About me: I've been into the music domain since 10 years ago, I attended the conservatory of music for 7 years..."
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.75" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

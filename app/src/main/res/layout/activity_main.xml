@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+
+    tools:context="com.example.user.register_majed.MainActivity">
+
+    <TextView
+        android:textAlignment="center"
+        android:text="Already Registered? Sign in here"
+        android:id="@+id/textViewSignin"
+        android:textColor="#FFF"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_margin="3dp"
+            android:imeOptions="actionDone"
+            android:textColorHint="#8a989a"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+           android:layout_weight="0.58"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_margin="3dp"
+            android:inputType="textPassword"
+            android:textColorHint="#8a989a"
+            android:imeOptions="actionDone"
+            android:hint="Password"
+            android:id="@+id/editTextPassword"
+            android:background="@drawable/rounded_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1.70"
+            android:padding="10dp" />
+
+
+        <Button
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button_settings"
+            android:id="@+id/buttonRegister"
+            android:text="Register"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/googlesign"
+        android:id="@+id/imageView3"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_weight="2.45"
+        android:layout_marginBottom="37dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:src="@drawable/ourlogo"
+        android:id="@+id/imageView2"
+        android:layout_weight="2.45"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/nav_account"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="My Account"/>
+
+    <item android:id="@+id/nav_events"
+        android:icon="@mipmap/ic_event_black_24dp"
+        android:title="Events"/>
+
+    <item android:id="@+id/nav_eventadd"
+        android:icon="@mipmap/ic_add_black_24dp"
+        android:title="Add Event"/>
+
+    <item android:id="@+id/nav_myevents"
+        android:icon="@mipmap/ic_event_black_24dp"
+        android:title="My Events"/>
+
+    <item android:id="@+id/nav_logout"
+        android:icon="@mipmap/ic_vpn_key_black_24dp"
+        android:title="Logout"/>
+
+</menu>
